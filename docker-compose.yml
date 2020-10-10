@@ -1,0 +1,9 @@
+version: "2"
+services:
+    app: 
+        build: .
+        volumes: 
+            - ./:/gorm_crud
+        ports: 
+            - "9000:8080"
+        # command: air
